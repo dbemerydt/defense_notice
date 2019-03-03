@@ -1,0 +1,84 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[14pt]{article}
+
+\usepackage{extsizes}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{fullpage}
+\usepackage{minted}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,stmaryrd,graphicx}
+% \usepackage{bfemery_defenseNoticeStyle}
+
+\renewenvironment{abstract}{
+    \thispagestyle{empty}
+    % \section*{Abstract}
+    \newpage
+    \vspace*{.7cm}
+    \begin{center}\underline{Abstract}\end{center}
+    \setlength{\parindent}{0.5in}
+    \setlength{\parskip}{0in}
+    \begin{small}
+}{
+    \pagenumbering{gobble}
+    \newpage
+    \end{small}
+}
+ 
+\makeatletter
+\newcommand{\fixed@sra}{$\vrule height 2\fontdimen22\textfont2 width 0pt\shortrightarrow$}
+\newcommand{\shortarrow}[1]{%
+  \mathrel{\text{\rotatebox[origin=c]{\numexpr#1*45}{\fixed@sra}}}
+}
+\makeatother
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{28pt}
+\pagenumbering{gobble}
+
+\begin{document}
+\begin{center}
+\begin{large}
+\vspace*{0.3cm}
+\textbf{\textsc{Graduate College}}\\
+\textbf{\textsc{Defense Notice}}\\[.5\baselineskip]
+\end{large}
+Please Post
+
+The following thesis presentation is open to\\
+those in the University community.
+
+Benjamin Freixas Emery
+
+Advisors: Chris Danforth \& Peter Dodds
+ 
+Master of Science
+
+Complex Systems and Data Science
+
+March 19$^{\text{th}}$, 2019
+
+3:00 PM
+
+Farrell Indecision Theater
+
+Network Scientific and Information Theoretic Approaches to Social Media During Extreme Climate Events
+\end{center}
+
+\begin{abstract}
+
+In addition to the tragedy they cause, major natural hazard and disaster events place a large cost on the governments and aid organizations who help people prepare for and recover from them. Such organizations are in constant need of strategies for distributing aid efficiently and comprehensively. The emergence of social media in everyday life has provided a platform for such organizations to coordinate relief efforts and communicate with people affected by disasters. It also has allowed affected individuals to communicate with one another on a large scale. The present thesis examines the dynamics of Twitter during extreme climate events and their aftermath in order to shed light on potential strategies for aid providers.
+
+We begin by looking at the five most expensive natural disasters in the United States between 2011 and 2016. We isolate Twitter users for each disaster who are likely Tweeting about food security or other basic needs during the event and its aftermath. We examine the follower count distributions of these users for each event. We then narrow focus to Hurricane Sandy, and look at the relationship between follower counts and relative increase in Tweeting rate during the event. We find that users with fewer than 100 followers were more likely to increase their rate of Tweet publication than influentials with many followers.
+
+We also use a synthetic model of Twitter's communication network to mimick the way Twitter stores and samples Tweet data. We measure the sensitivity of three measures of network centrality to these mechanisms. This provides insight relevant to those who build network representations of Twitter communication using the data Twitter provides. We see differences in the sensitivity of the centrality measures studied, differences in sensitivity to the different mechanisms, and a dependence between measure and mechanism.
+
+Finally, we construct a network representation of Puerto Rican Twitter users surrounding Hurricane Mar\'ia and its aftermath. We examine the evolution of this network over time, and communities present within the aggregate network. Using information theoretic tools, we discern differences in the body of Tweets between different communities in the network and different periods of time surrounding the hurricane's landfall. We observe many differences between communities, with more focus on Puerto Rico in the community containing most local government figures, whereas major celebrities tended to talk about more general Latin American issues. We also hand-categorize Twitter users in the network as news outlets, politicians, citizens, weather stations, meteorologists, or journalists, finding that the distribution of user type has a temporal dependence.
+
+\end{abstract}
+
+\end{document}# defense_notice
